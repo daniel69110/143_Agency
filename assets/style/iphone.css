@@ -1,102 +1,30 @@
-@font-face {
-    font-family: inria;
-    src: url(./Inria_Serif/InriaSerif-BoldItalic.ttf);
-
-
-}
-
-@font-face {
-    font-family: bold;
-    src: url(./Inria_Serif/InriaSerif-BoldItalic.ttf);
-}
-
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-
-a {
-    color: black;
-    text-decoration: none;
-
-
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-main a:hover img {
-    transform: scale(1.4);
-    /* Augmente la taille de 20% lors du survol */
-    transition: transform 0.3s ease-in-out;
-    /* Ajoute une transition fluide */
-
-}
-
-.liste-3 a:hover img {
-    transform: scale(1.4);
-    /* Augmente la taille de 20% lors du survol */
-    transition: transform 0.3s ease-in-out;
-    /* Ajoute une transition fluide */
-
-}
-
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-
-}
 
 
 
 
 
+/* @media screen and (max-width: 768px) { */
+   
+    
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-       
+    function removeConsecutiveDuplicates(arr) {
+        const uniqueValues = arr.filter((value, index) => value !== arr[index + 1]);
+        return uniqueValues.length === arr.length ? undefined : uniqueValues;
     }
 
-    to {
-        opacity: 1;
-       
-    }
-}
+    const arr = ["a", "a", "b", "c"];
+    const result = removeConsecutiveDuplicates(arr);
+    console.log(result);
 
 
 
-body {
-    background-color: #E1E1E1;
-
-    animation: fadeIn 4s ease-in-out;
-    /* Utilisation de l'animation fadeIn */
-
-
-}
-
-/* START HEADER */
 
 header {
     margin-left: auto;
     margin-right: auto;
     background-color: #B0927C;
-    height: 200px;
-    width: 1440px;
+    height: 100px;
+    width: 767px;
     display: flex;
     align-items: center;
 
@@ -142,7 +70,7 @@ nav {
 .favorite,
 .home {
     font-family: inria;
-    font-size: 1.7em;
+    font-size: 1.3em;
 
 
 
@@ -150,7 +78,7 @@ nav {
 
 /* END HEADER */
 
-.center {
+/* .center {
     background-color: #ffffffb8;
     width: 500px;
     height: 70px;
@@ -162,7 +90,7 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.4em;
 
-}
+} */
 
 
 /* START ASIDE */
@@ -173,13 +101,13 @@ aside {
     margin-right: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 1440px;
-    height: 650px;
+    width: 767px;
+    height: 280px;
 
 }
 
 .img-1 {
-    background-color: green;
+    /* background-color: green; */
     grid-column: 1/4;
     height: 100%;
     width: 100%;
@@ -187,20 +115,20 @@ aside {
 }
 
 .img-2 {
-    background-color: blue;
+    /* background-color: blue; */
     grid-column: 1/4;
     grid-row: 2;
     width: 100%;
-    height: 100%;
+    height: 80%;
 
 }
 
 .img-3 {
-    background-color: red;
+    /* background-color: red; */
     grid-column: 4/9;
     grid-row: 1/3;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 
@@ -215,7 +143,7 @@ aside {
     margin-right: auto;
     background-color: #C6D0B9;
     height: 110px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +179,7 @@ aside {
 
 .carousel_slide {
 
-    width: 1300px;
+    width: 767px;
     height: 350px;
 
 
@@ -313,27 +241,31 @@ aside {
 }
 
 .icone-1 {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     margin-top: 0px;
 }
 
 .letter {
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
     margin-left: 10px;
     margin-top: 2px;
 
 
 }
 
-
+main{
+    width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .volvic {
-    background-color: #d9d9d935;
+    background-color: #e52a2a35;
     border-radius: 20px;
-    width: 590px;
-    height: 320px;
+    width:350px ;
+    height: 220px;
     display: block;
 
 
@@ -367,14 +299,14 @@ li {
 
 .lala {
 
-    height: 85%;
+    height: 25%;
     display: block;
 
 }
 
 .d-block-w-100 {
-    width: 320px;
-    height: 230px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
 }
 
@@ -388,7 +320,7 @@ li {
     margin-right: auto;
     background-color: #ffff;
     height: 400px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -397,13 +329,13 @@ li {
 .ad-1 {
     background-color: aqua;
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 .ad-2 {
     background-color: rgb(247, 0, 255);
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 /* END BLOC-APPARTMENT */
@@ -414,7 +346,7 @@ li {
     margin-right: auto;
     background-color: #B0927C;
     height: 110px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,7 +365,7 @@ li {
     margin-right: auto;
     background-color: #ffff;
     height: 400px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -442,13 +374,13 @@ li {
 .ad-3 {
     background-color: aqua;
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 .ad-4 {
     background-color: rgb(247, 0, 255);
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 /* END BLOC-HOUSE */
@@ -458,7 +390,7 @@ li {
     margin-right: auto;
     background-color: #E1E1E1;
     height: 110px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,7 +410,7 @@ li {
     margin-right: auto;
     background-color: #ffff;
     height: 400px;
-    width: 1440px;
+    width: 767px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -487,13 +419,13 @@ li {
 .ad-5 {
     background-color: aqua;
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 .ad-6 {
     background-color: rgb(247, 0, 255);
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 /* END BLOC-FAVORITE */
@@ -503,9 +435,10 @@ footer {
     margin-top: 150px;
     background-color: #ffff;
     height: 400px;
-    width: 100%;
+    width: 1900px;
     display: flex;
-
+margin-left: auto;
+margin-right: auto;
     align-items: center;
 
 }
@@ -604,3 +537,5 @@ iframe {
 #underline {
     text-decoration: underline;
 }
+
+/* } */
